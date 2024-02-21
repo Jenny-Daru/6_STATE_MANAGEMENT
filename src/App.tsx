@@ -1,9 +1,17 @@
-import React from 'react';
+import React from "react";
+import { createGlobalStyle } from "styled-components";
+import TodoList from "./TodoList";
+
+const GlobalStyle = createGlobalStyle`
+  
+`;
 
 function App() {
   return (
-    <div>
-    </div>
+    <>
+      <GlobalStyle />
+      <TodoList />
+    </>
   );
 }
 
